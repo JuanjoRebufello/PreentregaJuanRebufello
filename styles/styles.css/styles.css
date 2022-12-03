@@ -1,0 +1,165 @@
+body{
+    background-color: #f7d6ca;
+    font-family: cursive;
+    margin: 0;
+    text-decoration: none;
+}
+.grid_container{
+    height: 900px;
+    display: grid;
+
+grid-template-areas:
+"header header header nav"
+"section section section section"
+"section section section section"
+"footer footer footer footer "
+;
+    row-gap: 10px;
+}
+
+.bordered{
+    border-color: aquamarine;
+    border-width: 2px;
+    border-style: solid;
+}
+/*ESTRUCTURA*/
+header{
+    height: 130px;
+    width: 100%;
+    background-color: #facebe;
+    grid-area: header;
+    display: flex;
+}
+
+nav{
+    height: 130px;
+    width: 100%;
+    background-color: #facebe;
+    grid-area: nav;
+}
+
+section{ 
+    grid-area: section;
+    text-align: center;
+    padding: 200px;
+}
+
+aside{
+    grid-area: aside;
+}
+
+footer{
+    grid-area: footer;
+    text-align: center;
+}
+
+.imgInicio{
+    height: 130px;
+    padding: 10px
+}
+/* CSS DEL NAV */
+.navBar{
+    display:inline-block;
+    text-align: center;
+}
+.navBar__list{
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.navBar__item{
+    display: inline-block;
+
+}
+
+
+.navLink{
+    display: inline-block; 
+    padding: 20px;
+
+}
+
+
+.navLink:hover{
+    background-color: #ebb39f;
+}
+
+.present{
+    text-align: center;
+    padding: 100px
+}
+
+/* IMAGENES */
+
+.imgPequena{
+    width: 5%;
+    height: 5%;
+}
+
+.imgServicios{
+    width: 350px;
+    height: 350px;
+
+}
+
+
+.imgClau{
+    width: 20%;
+    height: 20%;
+}
+
+.imgWSp{
+    width: 50px;
+    height: 50px;
+}
+
+/*
+.container_img{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 250px;
+    grid-gap: 20px;
+}
+*/
+/*
+div.container_img{
+    margin: 10px 20px;
+    box-shadow: 0 4px 8px;
+    float: left;
+}
+div.container_img img{
+    width: 200px;
+    height: auto;
+}*/
+
+.pie{
+    text-align: center;
+    text-shadow: #facebe;
+    padding: 10px;
+}
+
+.imagenes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.img2{
+    width: 600px;
+}
+
+.servimg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.divserv{
+    display: inline-block;
+    width: 400px;
+}
