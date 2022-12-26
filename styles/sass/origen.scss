@@ -1,2 +1,12 @@
-@import "utilities/_variables.scss";
+$color_principal: #f7d6ca; 
+$fuente-letra: cursive;
+$color-navlink: #ebb39f;
 
+body{
+    background-color: $color_principal;
+    font-family: $fuente-letra;
+}
+
+.navLink:hover{
+    background-color: $color-navlink;
+}
